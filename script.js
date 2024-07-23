@@ -121,21 +121,41 @@ if ((producto1 != "") && (producto2 != "") && (producto3 != "") && (producto4 !=
 
 /* 1- Solicitar al usuario un (1) un número y un (1) texto. 
 Efectuar una salida por alerta con el mensaje ingresado por cada repetición, hasta alcanzar el valor señalado por el usuario. */
-let repeticiones = prompt("Elegi un numero que represente la cantidad de repeticiones");
+/* let repeticiones = prompt("Elegi un numero que represente la cantidad de repeticiones");
 let textoRepetido = prompt("Que texto queres que se repita?");
 for (let index = 0; index < repeticiones; index++) {
     console.log(textoRepetido);
-}
+} */
 
 /* 2- Solicitar al usuario un (1) número. 
 Emplear este valor para determinar la cantidad de repeticiones, y efectuar una salida por alerta con el mensaje “lado” en cada repetición. 
 Pero si se alcanza un número de iteraciones mayor que cuatro (4), cancelar el ciclo. */
+/* let lados = parseInt(prompt("Ingresa cantidad de lados (max 4)"))
+for (let index = 0; index < lados; index++) {
+    if (index > 3) {
+        break
+    }
+    alert("Lado")
+} */
+
 
 /* 3- Solicitar al usuario la carga de diez (10) alumnos de forma consecutiva.
 Luego realizar un única salida por alerta, con el listado de alumnos registrados. */
+/* let alumnos = ""
+for (let index = 0; index < 10; index++) {
+    alumnos = alumnos + prompt("Ingresa nombre del alumno") + "\n"
+}
+alert(alumnos) */
 
 /* 4- Solicitar al usuario la carga de nombres de forma consecutiva,  hasta que se ingrese “Voldemort”.
 Luego realizar un única salida por alerta, con todos los nombres ingresados. */
+/* let nombre1 = prompt("Ingresa nombres").toLowerCase()
+let nombre2 = ""
+while (nombre1 != "voldemort") {
+    nombre2 = nombre2 + nombre1 + "\n"
+    nombre1 = prompt("Ingresa nombres")
+}
+alert(nombre2) */
 
 /* 5- Solicitar al usuario un (1) número de forma consecutiva, hasta que se ingrese “ESC”. 
 Generar una única salida compuesta por los siguientes productos, según el valor ingresado en cada ciclo:
@@ -144,3 +164,46 @@ Generar una única salida compuesta por los siguientes productos, según el valo
 “Carne” si es 3.
 “Pollo” si es 4.
  */
+
+/* let entrada =  prompt("SELECCIONAR PRODUCTO DE 1 A 4");
+while (entrada != 'ESC') {
+    switch (entrada) {
+        case "1":
+            alert("Tomate");
+            break;
+        case "2":
+            alert("Papa");
+            break;
+        case "3":
+            alert("Carne");
+            break;
+        case "4":
+            alert("Pollo");
+            break;
+        default:
+            alert("Error");
+            break;
+    }
+    entrada = prompt("SELECCIONAR PRODUCTO DE 1 A 4");
+} */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* 1- Codificar tres funciones:
+Una función entrada(), la cual solicite un valor al usuario y lo retorne.
+Una función procesamiento(valor), donde se transforme la entrada.
+Una función salida(valor), la cual mostrará el resultado por alerta.
+Luego, invocar las tres funciones.
+ */
+/* 2- Codificar una función que reciba un número decimal por parámetro, y lo retorne redondeado al entero más cercano. Para ello, puede emplearse  Math.round.
+Luego invocar la función de forma iterativa cinco (5) veces, solicitando en cada ciclo un número al usuario.
+ */
+/* 3- Codificar una función con la siguiente cabecera: impuesto (precio, porcentaje). En ella, se retorna un valor numérico compuesto por el precio recibido, más la suma del porcentaje ingresado.
+Luego invocar la función de forma iterativa cinco (5) veces, solicitando en cada ciclo un precio y porcentaje al usuario.
+ */
+/* 4- Codificar dos funciones:
+Una función cotizarDolar(pesos), la cual recibe un valor monetario en pesos argentinos, y lo retorna en su equivalente en dólares.
+Una función cotizarPesos(dolar), que recibe un valor monetario en dólares, y lo retorna en su equivalente en pesos argentinos.
+Luego invocar las funciones solicitando  al usuario el valor y el tipo de cotización a realizar.
+ */
+/* 5- Codificar una función con la siguiente cabecera: validacion(cadena). En ella, se retorna un valor booleano, el cual es true si el parámetro no es un cadena vacía. Caso contrario, se retorna false. Luego invocar la función de forma iterativa, hasta que el usuario tipee “ESC”, solicitando en cada ciclo una cadena a validar. */
